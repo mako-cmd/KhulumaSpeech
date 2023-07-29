@@ -51,7 +51,6 @@ function ChakraSideBar(data: { isOpen: boolean; onClose: () => void | null }) {
         isOpen={data.isOpen}
         placement="right"
         onClose={data.onClose}
-        finalFocusRef={btnRef}
       >
         <DrawerOverlay />
         <DrawerContent

@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import MobileHeader from "../components/Mobileheader";
 import { useState } from "react";
+import Footer from "../components/Footer";
 
 export default function HomeLayout() {
   let header = <Header />;
@@ -12,6 +13,7 @@ export default function HomeLayout() {
     <>
       {header}
       <Outlet />
+      <Footer />
     </>
   );
 }

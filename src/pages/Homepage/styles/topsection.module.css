@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .wrapper {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    width: 100vw;
+    height: 90vh;
+    background-color: #153a46;
+    color: white;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .wrapper {
+    width: 100vw;
+    height: 75vh;
+    background-color: #153a46;
+    color: white;
+  }
+}

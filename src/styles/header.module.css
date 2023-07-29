@@ -1,0 +1,30 @@
+.header_wrapper {
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  background-color: #153a46;
+  color: white;
+  width: 100vw;
+  height: 25vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow: hidden;
+}
+
+.left_section {
+  display: flex;
+  place-items: center;
+  place-content: baseline;
+}
+
+.right_section {
+  display: flex;
+  place-content: end;
+  place-items: center;
+}
+
+.center_section {
+  display: flex;
+  place-items: center;
+  place-content: center;
+}

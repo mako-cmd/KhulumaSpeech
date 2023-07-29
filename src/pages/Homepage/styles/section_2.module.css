@@ -1,0 +1,10 @@
+.wrapper {
+  width: 100vw;
+  min-height: 50vh;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+}

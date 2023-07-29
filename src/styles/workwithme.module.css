@@ -1,0 +1,22 @@
+.wrapper {
+  padding: 1rem;
+  background-color: white;
+  color: black;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  transition: all 0.1s ease-in-out;
+}
+
+.wrapper:hover {
+  scale: 1.1;
+}
+
+.wrapper:active {
+  scale: 1;
+}
+
+.label {
+  text-wrap: nowrap;
+  font-size: 5rem;
+}

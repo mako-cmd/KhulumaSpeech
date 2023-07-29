@@ -1,0 +1,20 @@
+.links_wrapper {
+  display: flex;
+  height: 100%;
+  place-content: center;
+  place-items: end;
+}
+
+.link_wrapper {
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  margin-right: 1rem;
+}
+
+.link_wrapper:hover {
+  background-color: white;
+  color: black;
+}

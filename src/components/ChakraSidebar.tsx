@@ -33,11 +33,7 @@ import { IconType } from "react-icons";
 import { ReactText } from "react";
 import { useRef, createContext } from "react";
 
-function ChakraSideBar(data: {
-  isOpen: boolean;
-  onOpen: () => void | null;
-  onClose: () => void | null;
-}) {
+function ChakraSideBar(data: { isOpen: boolean; onClose: () => void | null }) {
   const btnRef = useRef();
   interface LinkItemProps {
     name: string;
@@ -91,6 +87,7 @@ function ChakraSideBar(data: {
 
 interface NavItemProps extends FlexProps {
   icon: IconType;
+  href: null | string;
   children: ReactText;
 }
 const NavItem = ({ icon, href, children, ...rest }: NavItemProps) => {

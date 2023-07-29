@@ -1,4 +1,4 @@
-import classes from "../styles/Header.module.css";
+import classes from "../styles/header.module.css";
 import HeaderLinks from "./HeaderLinks";
 import Socials from "./Socials";
 import WorkWithMe from "./WorkWithMe";

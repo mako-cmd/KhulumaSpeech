@@ -10,7 +10,9 @@ export default function About() {
         />
       </div>
       <div className={classes.profile_info}>
-        <h1 className={classes.profile_info_heading}>Hi, I'm Lisa</h1>
+        <h1 className={classes.profile_info_heading}>
+          Hi, <br /> I'm Lisa
+        </h1>
         <p className={classes.profile_info_body}>
           I’m a Certified Practising Speech Pathologist with over 10 years
           experience in a range of contexts. I have experience working in the

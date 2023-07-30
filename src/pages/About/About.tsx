@@ -22,6 +22,15 @@ export default function About() {
           and your child’s needs, working as a team to support them through
           their learning needs during their early primary years.
         </p>
+        <div className={classes.subsection}>
+          <h2>Additional training</h2>
+          <ul>
+            <li>Sounds Write (2023)</li>
+            <li>Gestalt Language Processing – Meaningful Speech (2023)</li>
+            <li>Hanen – It Takes Two To Talk (2017)</li>
+            <li>Lidcombe (2017)</li>
+          </ul>
+        </div>
       </div>
     </div>
   );

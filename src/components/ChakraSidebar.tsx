@@ -31,19 +31,31 @@ import {
 } from "react-icons/fi";
 import { IconType } from "react-icons";
 import { ReactText } from "react";
-import { useRef, createContext } from "react";
+import { useRef, createContext, useContext } from "react";
+import { LayoutContext } from "../layouts/HomeLayout";
 
 function ChakraSideBar(data: { isOpen: boolean; onClose: () => void | null }) {
   const btnRef = useRef();
+  const props = useContext(LayoutContext);
+  const modalOpenCallback = props
+    ? props.contactModalUseDisclosure.onOpen
+    : undefined;
+
   interface LinkItemProps {
     name: string;
     icon: IconType;
     href: null | string;
+    onClick?: () => void;
   }
   const LinkItems: Array<LinkItemProps> = [
     { name: "Home", icon: FiHome, href: "/" },
     { name: "About", icon: FiInfo, href: "/about" },
-    { name: "Contact", icon: FiPhone, href: null },
+    {
+      name: "Contact",
+      icon: FiPhone,
+      href: null,
+      onClick: modalOpenCallback,
+    },
   ];
   return (
     <>
@@ -66,6 +78,7 @@ function ChakraSideBar(data: { isOpen: boolean; onClose: () => void | null }) {
                 key={link.name}
                 icon={link.icon}
                 href={link.href}
+                onClick={link.onClick}
               >
                 {link.name}
               </NavItem>

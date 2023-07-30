@@ -46,9 +46,14 @@
   }
 }
 
+.profile_info_body {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
 .profile_image_wrapper {
   display: grid;
-  place-content: center;
+  place-content: end;
   place-items: center;
   width: 100%;
   height: 100%;

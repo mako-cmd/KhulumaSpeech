@@ -29,6 +29,7 @@ import {
   FiInfo,
   FiPhone,
 } from "react-icons/fi";
+import { MdOutlineConnectWithoutContact } from "react-icons/md";
 import { IconType } from "react-icons";
 import { ReactText } from "react";
 import { useRef, createContext, useContext } from "react";
@@ -64,7 +65,7 @@ function ChakraSideBar(data: { isOpen: boolean; onClose: () => void | null }) {
     },
     {
       name: "Work With Me",
-      icon: FiPhone,
+      icon: MdOutlineConnectWithoutContact,
       href: null,
       onClick: () => handleModalOpen(workWithMeModalOpenCallback),
     },

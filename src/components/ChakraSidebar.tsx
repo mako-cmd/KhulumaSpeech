@@ -37,9 +37,15 @@ import { LayoutContext } from "../layouts/HomeLayout";
 function ChakraSideBar(data: { isOpen: boolean; onClose: () => void | null }) {
   const btnRef = useRef();
   const props = useContext(LayoutContext);
-  const modalOpenCallback = props
-    ? props.contactModalUseDisclosure.onOpen
-    : undefined;
+  const contactModalOpenCallback = props?.contactModalUseDisclosure.onOpen;
+  const workWithMeModalOpenCallback = props?.howIWorkModalUseDisclosure.onOpen;
+
+  const handleModalOpen = (callback: (() => void) | undefined) => {
+    data.onClose();
+    if (callback !== undefined) {
+      callback();
+    }
+  };
 
   interface LinkItemProps {
     name: string;
@@ -54,7 +60,13 @@ function ChakraSideBar(data: { isOpen: boolean; onClose: () => void | null }) {
       name: "Contact",
       icon: FiPhone,
       href: null,
-      onClick: modalOpenCallback,
+      onClick: () => handleModalOpen(contactModalOpenCallback),
+    },
+    {
+      name: "Work With Me",
+      icon: FiPhone,
+      href: null,
+      onClick: () => handleModalOpen(workWithMeModalOpenCallback),
     },
   ];
   return (

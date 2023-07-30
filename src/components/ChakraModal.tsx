@@ -14,6 +14,7 @@ import { ReactNode } from "react";
 interface IData {
   title: ReactNode;
   content: ReactNode;
+  size?: "xs" | "sm" | "md" | "lg" | "xl" | "full" | undefined;
   stateVars: {
     isOpen: boolean;
     onOpen: () => void;
@@ -25,12 +26,18 @@ interface IData {
   };
 }
 
-export default function ChakraModal({ title, content, stateVars }: IData) {
+export default function ChakraModal({
+  title,
+  content,
+  stateVars,
+  size = undefined,
+}: IData) {
   return (
     <>
       <Modal
         isOpen={stateVars.isOpen}
         onClose={stateVars.onClose}
+        size={size}
       >
         <ModalOverlay />
         <ModalContent>

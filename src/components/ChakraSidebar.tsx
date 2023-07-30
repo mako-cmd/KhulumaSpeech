@@ -83,7 +83,9 @@ function ChakraSideBar(data: { isOpen: boolean; onClose: () => void | null }) {
           color="white"
         >
           <DrawerCloseButton />
-          <DrawerHeader>LOGO</DrawerHeader>
+          <DrawerHeader>
+            <i>Khuluma Speech</i>
+          </DrawerHeader>
 
           <DrawerBody>
             {LinkItems.map((link) => (

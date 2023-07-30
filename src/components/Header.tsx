@@ -2,6 +2,8 @@ import classes from "../styles/header.module.css";
 import HeaderLinks from "./HeaderLinks";
 import Socials from "./Socials";
 import WorkWithMe from "./WorkWithMe";
+import ChakraModal from "./ChakraModal";
+import { useDisclosure } from "@chakra-ui/react";
 
 export default function Header() {
   return (

@@ -5,9 +5,9 @@ export default function Section_2() {
     <>
       <div className={classes.wrapper}>
         <h2 style={{ paddingBottom: "2rem" }}>
-          Language and Literacy Services for Children
+          Evidence-based language and literacy services for 5 - 9 year olds in
+          Melbourne’s Outer West.
         </h2>
-        <h2>4 - 7 Year Olds</h2>
       </div>
     </>
   );

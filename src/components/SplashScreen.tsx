@@ -1,5 +1,7 @@
+import { useEffect } from "react";
+
 export default function SplashScreen() {
-  if (document !== null) {
+  useEffect(() => {
     window.onload! = () => {
       document.getElementById("splash-screen")!.style.scale = "1.3";
       document.getElementById("layout")!.style.display = "none";
@@ -11,7 +13,7 @@ export default function SplashScreen() {
         document.getElementById("splash-screen")!.style.display = "none";
       }, 2000);
     };
-  }
+  }, []);
   return (
     <>
       <div

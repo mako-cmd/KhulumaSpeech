@@ -1,12 +1,15 @@
 export default function SplashScreen() {
   if (document !== null) {
     window.onload! = () => {
+      document.getElementById("splash-screen")!.style.scale = "1.3";
+      document.getElementById("layout")!.style.display = "none";
       setTimeout(() => {
         document.getElementById("splash-screen")!.style.opacity = "0";
-      }, 2000);
+        document.getElementById("layout")!.style.display = "block";
+      }, 1000);
       setTimeout(() => {
         document.getElementById("splash-screen")!.style.display = "none";
-      }, 3000);
+      }, 2000);
     };
   }
   return (

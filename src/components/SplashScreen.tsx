@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 export default function SplashScreen() {
   useEffect(() => {
-    window.onload! = () => {
+    window.onload = () => {
       document.getElementById("splash-screen")!.style.scale = "1.3";
       document.getElementById("layout")!.style.display = "none";
       setTimeout(() => {

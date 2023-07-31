@@ -3,7 +3,7 @@
     width: 100vw;
     min-height: 75vh;
     display: grid;
-    place-content: center;
+    place-content: end;
     place-items: center;
     grid-template-columns: 1fr 2fr;
   }

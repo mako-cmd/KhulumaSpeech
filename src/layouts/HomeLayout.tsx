@@ -7,6 +7,7 @@ import ChakraModal from "../components/ChakraModal";
 import { useDisclosure } from "@chakra-ui/react";
 import { PhoneIcon } from "@chakra-ui/icons";
 import { createContext } from "react";
+import SplashScreen from "../components/SplashScreen";
 
 interface IUseDisclosure {
   isOpen: boolean;
@@ -39,6 +40,7 @@ export default function HomeLayout() {
 
   return (
     <LayoutContext.Provider value={props}>
+      <SplashScreen />
       <ChakraModal
         title="Get In Touch"
         content={

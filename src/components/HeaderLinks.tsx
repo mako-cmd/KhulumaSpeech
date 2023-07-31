@@ -4,6 +4,7 @@ import ChakraModal from "./ChakraModal";
 import { PhoneIcon } from "@chakra-ui/icons";
 import { useContext } from "react";
 import { LayoutContext } from "../layouts/HomeLayout";
+import { Link } from "react-router-dom";
 
 export default function HeaderLinks() {
   const props = useContext(LayoutContext);
@@ -35,12 +36,12 @@ function HeaderLink(data: {
   onClick?: () => void;
 }) {
   return (
-    <a
-      href={data.url || undefined}
+    <Link
+      to={data.url ? data.url : ""}
       className={classes.link_wrapper}
       onClick={data.onClick}
     >
       <span className="no-select">{data.label}</span>
-    </a>
+    </Link>
   );
 }

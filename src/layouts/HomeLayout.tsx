@@ -145,7 +145,7 @@ export default function HomeLayout() {
           <Footer />
         </LayoutContext.Provider>
       </div>
-      <SplashScreen />
+      {/* <SplashScreen /> */}
     </>
   );
 }

@@ -40,7 +40,6 @@ export default function HomeLayout() {
 
   return (
     <>
-      <SplashScreen />
       <div id="layout">
         <LayoutContext.Provider value={props}>
           <ChakraModal
@@ -146,6 +145,7 @@ export default function HomeLayout() {
           <Footer />
         </LayoutContext.Provider>
       </div>
+      <SplashScreen />
     </>
   );
 }

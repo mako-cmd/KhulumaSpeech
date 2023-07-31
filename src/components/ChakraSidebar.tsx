@@ -34,6 +34,7 @@ import { IconType } from "react-icons";
 import { ReactText } from "react";
 import { useRef, createContext, useContext } from "react";
 import { LayoutContext } from "../layouts/HomeLayout";
+import { Link } from "react-router-dom";
 
 function ChakraSideBar(data: { isOpen: boolean; onClose: () => void | null }) {
   const btnRef = useRef();
@@ -55,8 +56,18 @@ function ChakraSideBar(data: { isOpen: boolean; onClose: () => void | null }) {
     onClick?: () => void;
   }
   const LinkItems: Array<LinkItemProps> = [
-    { name: "Home", icon: FiHome, href: "/" },
-    { name: "About", icon: FiInfo, href: "/about" },
+    {
+      name: "Home",
+      icon: FiHome,
+      href: "/",
+      onClick: () => handleModalOpen(undefined),
+    },
+    {
+      name: "About",
+      icon: FiInfo,
+      href: "/about",
+      onClick: () => handleModalOpen(undefined),
+    },
     {
       name: "Contact",
       icon: FiPhone,
@@ -119,38 +130,38 @@ interface NavItemProps extends FlexProps {
 }
 const NavItem = ({ icon, href, children, ...rest }: NavItemProps) => {
   return (
-    <Box
-      as="a"
-      href={href ?? undefined}
-      style={{ textDecoration: "none" }}
-      _focus={{ boxShadow: "none" }}
-    >
-      <Flex
-        align="center"
-        p="4"
-        mx="4"
-        borderRadius="lg"
-        role="group"
-        cursor="pointer"
-        _hover={{
-          bg: "cyan.400",
-          color: "white",
-        }}
-        {...rest}
+    <Link to={href ? href : ""}>
+      <Box
+        style={{ textDecoration: "none" }}
+        _focus={{ boxShadow: "none" }}
       >
-        {icon && (
-          <Icon
-            mr="4"
-            fontSize="16"
-            _groupHover={{
-              color: "white",
-            }}
-            as={icon}
-          />
-        )}
-        {children}
-      </Flex>
-    </Box>
+        <Flex
+          align="center"
+          p="4"
+          mx="4"
+          borderRadius="lg"
+          role="group"
+          cursor="pointer"
+          _hover={{
+            bg: "cyan.400",
+            color: "white",
+          }}
+          {...rest}
+        >
+          {icon && (
+            <Icon
+              mr="4"
+              fontSize="16"
+              _groupHover={{
+                color: "white",
+              }}
+              as={icon}
+            />
+          )}
+          {children}
+        </Flex>
+      </Box>
+    </Link>
   );
 };
 

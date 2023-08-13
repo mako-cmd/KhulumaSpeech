@@ -2,12 +2,13 @@ import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import MobileHeader from "../components/Mobileheader";
 import { useState } from "react";
-import Footer from "../components/Footer";
+import SubFooter from "../components/SubFooter";
 import ChakraModal from "../components/ChakraModal";
 import { useDisclosure } from "@chakra-ui/react";
 import { PhoneIcon } from "@chakra-ui/icons";
 import { createContext } from "react";
 import SplashScreen from "../components/SplashScreen";
+import Footer from "../components/Footer";
 
 interface IUseDisclosure {
   isOpen: boolean;
@@ -143,6 +144,7 @@ export default function HomeLayout() {
           {header}
           <Outlet />
           <Footer />
+          {/* <SubFooter /> */}
         </LayoutContext.Provider>
       </div>
       {/* <SplashScreen /> */}

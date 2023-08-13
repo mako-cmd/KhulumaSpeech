@@ -1,10 +1,16 @@
 .wrapper {
   width: 100vw;
-  min-height: 50vh;
-  background-color: white;
-  color: black;
+  padding: 2rem 0;
+  background-color: #153a46;
+  color: white;
   display: flex;
   flex-direction: column;
   place-content: center;
   place-items: center;
+}
+
+@media (max-width: 768px) {
+  .wrapper h2 {
+    font-size: larger;
+  }
 }

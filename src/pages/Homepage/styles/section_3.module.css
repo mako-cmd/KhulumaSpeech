@@ -1,15 +1,16 @@
+.wrapper {
+  color: #153a46;
+  background-color: white;
+}
 @media (min-width: 768px) {
   .wrapper {
-    padding: 2em;
+    padding: 8rem;
     width: 100vw;
     min-height: 50vh;
-    background-color: #153a46;
-    color: white;
   }
 
   .sub_wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     place-content: center;
     place-items: center;
   }
@@ -37,13 +38,10 @@
     padding: 2em;
     width: 100vw;
     min-height: 50vh;
-    background-color: #153a46;
-    color: white;
   }
 
   .sub_wrapper {
     display: grid;
-    grid-template-rows: 1fr 1fr;
     place-content: center;
     place-items: center;
   }

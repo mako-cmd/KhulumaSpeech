@@ -5,7 +5,7 @@
   background-color: #153a46;
   color: white;
   width: 100vw;
-  height: 25vh;
+  height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   overflow: hidden;
@@ -25,6 +25,11 @@
 
 .center_section {
   display: flex;
+  flex-direction: column;
   place-items: center;
   place-content: center;
+}
+
+.logo {
+  height: 6rem;
 }

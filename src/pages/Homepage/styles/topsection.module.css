@@ -1,3 +1,12 @@
+.wrapper {
+  color: #153a46;
+  background-color: white;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  place-content: center;
+  place-items: center;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 4rem;
@@ -8,13 +17,16 @@
   }
 
   .wrapper {
-    display: grid;
-    place-content: center;
-    place-items: center;
     width: 100vw;
-    height: 90vh;
-    background-color: #153a46;
-    color: white;
+    height: 100vh;
+  }
+
+  .logo {
+    padding: 2rem;
+  }
+
+  .call_to_scroll_down {
+    scale: 4;
   }
 }
 @media (min-width: 768px) {
@@ -28,8 +40,29 @@
 
   .wrapper {
     width: 100vw;
-    height: 75vh;
-    background-color: #153a46;
-    color: white;
+    height: 90vh;
+    display: grid;
+    place-content: center;
+    place-items: center;
+  }
+
+  .logo {
+    width: 50vw;
+  }
+  .call_to_scroll_down {
+    scale: 8;
+  }
+}
+
+.call_to_scroll_down {
+  animation: bob_motion 1s infinite alternate;
+}
+
+@keyframes bob_motion {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-0.5rem);
   }
 }

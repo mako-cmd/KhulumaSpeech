@@ -10,10 +10,15 @@ export default function Header() {
     <>
       <div className={classes.header_wrapper}>
         <div className={classes.left_section}>
-          <Socials />
+          {/* <Socials /> */}
+          <HeaderLinks />
         </div>
         <div className={classes.center_section}>
-          <HeaderLinks />
+          {/* <img
+            className={classes.logo}
+            src="/logo_sm.png"
+            alt="logo"
+          /> */}
         </div>
         <div className={classes.right_section}>
           <WorkWithMe />

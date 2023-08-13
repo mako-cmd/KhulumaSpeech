@@ -21,7 +21,11 @@ export default function MobileHeader() {
         onClose={closeDrawer}
       />
       <div className={classes.wrapper}>
-        <Socials />
+        <img
+          src="/logo_sm.png"
+          style={{ height: "4rem" }}
+          alt="logo"
+        />
         <button
           className={classes.sidebar_button}
           onClick={toggleDrawer}

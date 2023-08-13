@@ -1,9 +1,8 @@
-.footer {
-  padding: 1rem 0 1rem 0;
-  border-top: 1px solid grey;
-  background-color: #153a46;
-  color: #fff;
+.wrapper {
+  width: 100vw;
+  height: 40vh;
+  background-color: #f15226;
+  color: white;
   display: grid;
-  place-content: center;
-  place-items: center;
+  grid-template-columns: 1fr 1fr;
 }

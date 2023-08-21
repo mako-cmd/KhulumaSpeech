@@ -32,10 +32,7 @@ export default function Footer() {
           </div>
           <div className={classes.links}>
             <h3>Quick Links</h3>
-            <Link
-              to={""}
-              onClick={props?.howIWorkModalUseDisclosure.onOpen}
-            >
+            <Link to={"/How-I-Work"}>
               <span>Work With Me</span>
             </Link>
             <a

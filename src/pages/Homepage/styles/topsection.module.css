@@ -27,6 +27,7 @@
 
   .call_to_scroll_down {
     scale: 4;
+    margin-bottom: 4rem;
   }
 }
 @media (min-width: 768px) {

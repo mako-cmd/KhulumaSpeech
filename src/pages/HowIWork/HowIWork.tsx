@@ -12,7 +12,7 @@ export default function HowIWork() {
             Fill this intake{" "}
             <a
               style={{ color: "blue" }}
-              href="https://docs.google.com/forms/d/1_X3d-YysC68t_S8FHOnLXKHULxMOpxKmhKe9MzzFL14/edit"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc3c2jA2nmRWP6Q-9xGwMHk9x6Y7MfaSfTaFmIVhZacPy8ivA/viewform?usp=sf_link"
               target="_blank"
             >
               form

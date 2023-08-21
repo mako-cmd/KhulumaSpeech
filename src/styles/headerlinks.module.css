@@ -3,6 +3,7 @@
   height: 100%;
   place-content: center;
   place-items: end;
+  padding: 1rem;
 }
 
 .link_wrapper {
@@ -12,9 +13,11 @@
   place-content: center;
   place-items: center;
   margin-right: 1rem;
+  color: #153a46;
 }
 
 .link_wrapper:hover {
-  background-color: white;
-  color: black;
+  background-color: rgba(21, 58, 70, 1);
+  color: white;
+  scale: 1.1;
 }

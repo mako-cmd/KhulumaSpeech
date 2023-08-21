@@ -7,6 +7,7 @@ import ErrorPage from "./ErrorPage";
 import HomeLayout from "./layouts/HomeLayout";
 import HomePage from "./pages/Homepage/HomePage";
 import About from "./pages/About/About";
+import HowIWork from "./pages/HowIWork/HowIWork";
 
 function App() {
   const router = createBrowserRouter([
@@ -22,6 +23,10 @@ function App() {
         {
           path: "/About",
           element: <About />,
+        },
+        {
+          path: "/How-I-Work",
+          element: <HowIWork />,
         },
       ],
     },

@@ -11,7 +11,10 @@ export default function Header() {
       <div className={classes.header_wrapper}>
         <div className={classes.left_section}>
           {/* <Socials /> */}
-          <HeaderLinks />
+          <img
+            className={classes.logo}
+            src="/logo_sm.png"
+          />
         </div>
         <div className={classes.center_section}>
           {/* <img
@@ -21,7 +24,8 @@ export default function Header() {
           /> */}
         </div>
         <div className={classes.right_section}>
-          <WorkWithMe />
+          {/* <WorkWithMe /> */}
+          <HeaderLinks />
         </div>
       </div>
     </>

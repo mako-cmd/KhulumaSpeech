@@ -75,10 +75,10 @@ function ChakraSideBar(data: { isOpen: boolean; onClose: () => void | null }) {
       onClick: () => handleModalOpen(contactModalOpenCallback),
     },
     {
-      name: "Work With Me",
+      name: "How I Work",
       icon: MdOutlineConnectWithoutContact,
-      href: null,
-      onClick: () => handleModalOpen(workWithMeModalOpenCallback),
+      href: "/How-I-Work",
+      onClick: () => handleModalOpen(undefined),
     },
   ];
   return (

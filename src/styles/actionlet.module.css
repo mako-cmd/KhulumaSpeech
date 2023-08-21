@@ -1,0 +1,25 @@
+.wrapper {
+  display: grid;
+  width: 8rem;
+  grid-template-rows: 4fr 1fr;
+  place-content: center;
+  place-items: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 5px solid white;
+  transition: all 0.3s ease-in-out;
+}
+
+.wrapper:hover {
+  scale: 1.1;
+  background-color: #153a46;
+  color: white;
+}
+
+.icon {
+  scale: 5;
+}
+
+.label {
+  font-weight: 500;
+}

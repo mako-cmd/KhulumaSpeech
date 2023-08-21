@@ -1,8 +1,93 @@
-.wrapper {
-  width: 100vw;
-  height: 40vh;
-  background-color: #f15226;
+.links h3 {
   color: white;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  font-size: 1.7rem;
+  padding: 0 0 0.2rem 0;
+  margin: 0 0 0.8rem 0;
+  border-bottom: 2px solid white;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    width: 100vw;
+    padding: 2rem 0 0 0;
+    background-color: #f15226;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    place-content: center;
+  }
+
+  .abo_ack {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    .acknowledgment {
+      padding: 0 2rem;
+      text-align: center;
+      display: grid;
+      place-content: center;
+      place-items: center;
+    }
+  }
+
+  .logo {
+    height: 6rem;
+    object-fit: contain;
+    padding-bottom: 2rem;
+  }
+
+  .logos {
+    display: grid;
+    place-content: center;
+    place-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 100vw;
+    padding: 2rem 0 0 0;
+    background-color: #f15226;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    place-content: center;
+  }
+
+  .abo_ack {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    .acknowledgment {
+      padding: 0 2rem;
+      text-align: center;
+      display: grid;
+      place-content: center;
+      place-items: center;
+    }
+  }
+
+  .logo {
+    height: 6rem;
+    object-fit: contain;
+    padding-bottom: 2rem;
+  }
+
+  .logos {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    place-items: center;
+  }
 }

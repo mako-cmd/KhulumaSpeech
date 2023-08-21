@@ -32,10 +32,11 @@ export default function About() {
           <div className={classes.subsection}>
             <h2>Additional training</h2>
             <ul>
-              <li>Sounds Write (2023)</li>
-              <li>Gestalt Language Processing – Meaningful Speech (2023)</li>
-              <li>Hanen – It Takes Two To Talk (2017)</li>
-              <li>Lidcombe (2017)</li>
+              <li>Lidcombe </li>
+              <li>Sounds Write</li>
+              <li>Hanen – It Takes Two To Talk</li>
+              <li>Oral control lisp / tongue thrust</li>
+              <li>Gestalt Language Processing – Meaningful Speech </li>
             </ul>
           </div>
         </div>

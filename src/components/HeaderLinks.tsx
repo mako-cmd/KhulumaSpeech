@@ -21,6 +21,10 @@ export default function HeaderLinks() {
           url="/about"
         />
         <HeaderLink
+          label="How I Work"
+          url="/How-I-Work"
+        />
+        <HeaderLink
           label="Contact"
           onClick={props ? props.contactModalUseDisclosure.onOpen : undefined}
           url={null}

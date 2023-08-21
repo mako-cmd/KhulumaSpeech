@@ -1,0 +1,90 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-content: center;
+  padding: 0 0 100px 0;
+  background-color: white;
+  text-align: left;
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 2rem 0 4rem 0;
+  color: #1a1a1a;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 100;
+  margin: 0 0 20px 0;
+  color: #1a1a1a;
+}
+
+.tip {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  place-content: center;
+  place-items: center;
+  width: 80vw;
+  height: 10rem;
+  text-align: center;
+  background-color: #d6f6fa;
+  margin: 2rem;
+}
+
+.fees {
+  max-width: 100vw;
+  padding: 0 10rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.timeline {
+  scale: 1.4;
+  padding: 0 0 4rem 0;
+}
+
+@media (max-width: 767px) {
+  .timeline {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    max-width: 100vw;
+    min-height: 40rem;
+    padding: 0 0 4rem 0;
+  }
+
+  .wrapper .tip {
+    height: auto;
+    padding: 1.5rem;
+    margin-top: 13rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description {
+    width: 50vw;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin: 2rem 0 4rem 0;
+    color: #1a1a1a;
+  }
+
+  .wrapper h3 {
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 0 0 20px 0;
+    color: #1a1a1a;
+  }
+
+  .fees {
+    max-width: 100vw;
+    padding: 2rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+}

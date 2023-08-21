@@ -41,7 +41,10 @@ export default function HomeLayout() {
 
   return (
     <>
-      <div id="layout">
+      <div
+        className="layout"
+        id="layout"
+      >
         <LayoutContext.Provider value={props}>
           <ChakraModal
             title="Get In Touch"

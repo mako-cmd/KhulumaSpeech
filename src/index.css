@@ -100,3 +100,9 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background-color: gray;
 }
+
+@media (max-width: 767px) {
+  .layout {
+    margin-top: 10vh;
+  }
+}

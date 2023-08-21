@@ -1,14 +1,21 @@
 .header_wrapper {
   top: 0;
   left: 0;
-  padding: 2rem;
-  background-color: #153a46;
-  color: white;
+  padding: 0.3rem;
+  background-color: white;
+  /* background-color: rgba(21, 58, 70, 1); */
+  padding: 0 2rem;
+  color: #153a46;
   width: 100vw;
   height: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 2fr;
   overflow: hidden;
+}
+
+.logo {
+  max-height: 3rem;
+  margin: 0 1rem;
 }
 
 .left_section {

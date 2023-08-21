@@ -106,3 +106,7 @@ body::-webkit-scrollbar-thumb {
     margin-top: 10vh;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}

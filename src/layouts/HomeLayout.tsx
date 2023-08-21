@@ -9,6 +9,7 @@ import { PhoneIcon } from "@chakra-ui/icons";
 import { createContext } from "react";
 import SplashScreen from "../components/SplashScreen";
 import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 interface IUseDisclosure {
   isOpen: boolean;
@@ -147,6 +148,8 @@ export default function HomeLayout() {
           {header}
           <Outlet />
           <Footer />
+          <ScrollToTop />
+
           {/* <SubFooter /> */}
         </LayoutContext.Provider>
       </div>

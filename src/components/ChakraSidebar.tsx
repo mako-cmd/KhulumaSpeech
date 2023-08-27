@@ -69,16 +69,16 @@ function ChakraSideBar(data: { isOpen: boolean; onClose: () => void | null }) {
       onClick: () => handleModalOpen(undefined),
     },
     {
-      name: "Contact",
-      icon: FiPhone,
-      href: null,
-      onClick: () => handleModalOpen(contactModalOpenCallback),
+      name: "The Process",
+      icon: MdOutlineConnectWithoutContact,
+      href: "/The-Process",
+      onClick: () => handleModalOpen(undefined),
     },
     {
-      name: "How I Work",
-      icon: MdOutlineConnectWithoutContact,
-      href: "/How-I-Work",
-      onClick: () => handleModalOpen(undefined),
+      name: "Contact",
+      icon: FiPhone,
+      href: window.location.pathname,
+      onClick: () => handleModalOpen(contactModalOpenCallback),
     },
   ];
   return (

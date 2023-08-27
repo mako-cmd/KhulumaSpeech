@@ -25,7 +25,7 @@ function App() {
           element: <About />,
         },
         {
-          path: "/How-I-Work",
+          path: "/The-Process",
           element: <HowIWork />,
         },
       ],

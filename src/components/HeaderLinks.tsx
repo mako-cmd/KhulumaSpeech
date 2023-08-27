@@ -21,8 +21,8 @@ export default function HeaderLinks() {
           url="/about"
         />
         <HeaderLink
-          label="How I Work"
-          url="/How-I-Work"
+          label="The Process"
+          url="/The-Process"
         />
         <HeaderLink
           label="Contact"

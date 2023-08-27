@@ -35,7 +35,7 @@ export default function About() {
               <li>Lidcombe </li>
               <li>Sounds Write</li>
               <li>Hanen – It Takes Two To Talk</li>
-              <li>Oral control lisp / tongue thrust</li>
+              <li>Oral control - lisp / tongue thrust</li>
               <li>Gestalt Language Processing – Meaningful Speech </li>
             </ul>
           </div>

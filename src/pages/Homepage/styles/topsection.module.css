@@ -18,7 +18,7 @@
 
   .wrapper {
     width: 100vw;
-    height: 90vh;
+    min-height: 40vh;
   }
 
   .logo {
@@ -41,7 +41,7 @@
 
   .wrapper {
     width: 100vw;
-    height: 89vh;
+    min-height: 40vh;
     display: grid;
     place-content: center;
     place-items: center;

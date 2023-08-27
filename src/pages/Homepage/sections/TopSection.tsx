@@ -18,7 +18,7 @@ export default function TopSection() {
         alt="logo"
       />
 
-      <BiSolidChevronsDown className={classes.call_to_scroll_down} />
+      {/* <BiSolidChevronsDown className={classes.call_to_scroll_down} /> */}
     </div>
   );
 }

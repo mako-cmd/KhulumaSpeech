@@ -6,7 +6,7 @@ export default function Section_2() {
       <div className={classes.wrapper}>
         <h2>
           <span>
-            Speech Pathology services for children under 9 yrs in Melbourne’s
+            Speech Pathology services for children under 8 yrs in Melbourne’s
             Outer West.
           </span>
           <br />

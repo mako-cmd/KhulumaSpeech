@@ -56,7 +56,7 @@ export default function HomeLayout() {
                   style={{ display: "flex", placeItems: "center", gap: "10px" }}
                 >
                   <PhoneIcon />
-                  <a href="tel:0412 345 678">0412 345 678</a>
+                  <a href="tel:0478 624 165">0478 624 165</a>
                 </span>
                 <br />
                 <span
